@@ -1,0 +1,23 @@
+@import "./abstracts/mixins";
+@import "./abstracts/vars";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Heebo', sans-serif;
+    min-width: 320px;
+}
+
+a{
+    text-decoration: none;
+}
+
+@import './header';
+@import './style2.scss'
