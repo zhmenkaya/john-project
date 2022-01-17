@@ -27,4 +27,7 @@ a{
 
 .page{
     padding: 90px 0 0 0;
+    @media (max-width:360px) {
+        padding: 33px 0 0 0;          
+    }
 }
