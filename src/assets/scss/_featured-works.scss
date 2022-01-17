@@ -1,0 +1,19 @@
+.featured-works{
+    padding: 30px 0 80px 0;
+    &__container{
+        max-width: 856px;
+        margin: 0 auto;
+        @media (max-width:768px) {
+            max-width: 565px;            
+        }
+        @media (max-width:576px) {
+            max-width: 520px;           
+        }
+        @media (max-width:360px) {
+            max-width: 290px;           
+        }
+    }
+    &__title{
+        margin: 0 0 20px 0;
+    }
+}

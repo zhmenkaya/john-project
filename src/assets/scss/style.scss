@@ -24,11 +24,24 @@ a{
 @import './header';
 @import './hello';
 @import './recent-posts';
-
+@import './featured-works';
+@import './works';
 
 .page{
     padding: 90px 0 0 0;
     @media (max-width:360px) {
         padding: 33px 0 0 0;          
+    }
+}
+
+._ibg{
+    position: relative;
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
     }
 }
