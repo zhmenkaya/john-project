@@ -17,7 +17,6 @@
 }
 
 .menu{
-    &__icon{}
     &__body{
         @media (max-width: 768px) {
             transform: translate(0px, -100%);
@@ -76,11 +75,9 @@
     }
     @media (max-width: 768px) {
         font-size: 40px;
-        display: block;
         text-align: center;
     }
 }
-.container{}
 
 // Burger
 .icon-menu{

@@ -1,24 +1,21 @@
-@mixin text($fontSize, $fontWeight, $lineHeight, $color) {
-    font-weight: $fontWeight;
-    font-size: $fontSize;
-    line-height: $lineHeight;
-    color: $color;
+// Colors
+$accentColor: #FC9B09;
+$primaryColor: #fff;
+$secondaryColor: #C7C7C7;
+$textColor: #21243D;
+$textColorLight: #B3B3B3;
+$linkColor: #5286EC;
+
+%container{
+    width: 100%;
+    padding: 0 15px;
+    // border: 1px solid red;
+    max-width:1140px;
+    margin:0 auto;
+    @media screen and (min-width:576px) {
+        padding: 0 35px;            
+    }
+    @media screen and (min-width:768px) {
+        padding: 0 50px;           
+    }
 }
-
-@mixin media($width, $type:min) {
-    @if map_has_key($breakpoints, $width) {
-    $width: map_get($breakpoints, $width);
-    @if $type == max {
-    $width: $width - 1px;
-    }
-    }
-    @media (#{$type}-width: $width) {
-    @content;
-    }
-    }
-
-    $breakpoints: (
-        xs: 576px,
-        sm: 768px,
-        md: 1280px
-    )

@@ -13,11 +13,18 @@ html,
 body {
     font-family: 'Heebo', sans-serif;
     min-width: 320px;
+    color:#21243D;
 }
 
 a{
     text-decoration: none;
 }
 
+
 @import './header';
-@import './style2.scss'
+@import './hello';
+
+
+.page{
+    padding: 90px 0 0 0;
+}
