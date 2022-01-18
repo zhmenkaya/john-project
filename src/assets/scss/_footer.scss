@@ -1,0 +1,30 @@
+.footer{
+    text-align: center;
+    padding: 50px 0;
+    &__container{}
+    &__social{}
+    &__copy{
+        font-size: 14px;
+    }
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    &:last-child{
+        margin-right: none;
+    }
+    &__item{
+        margin-right: 30px;
+        &:hover{
+            transform: scale(1.5);
+            transition: all .3s ease;
+            -webkit-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            -o-transform: scale(1.5);
+        }
+    }
+}
